@@ -9,8 +9,9 @@ stages:
     displayName: Build docker image
     steps:
     - task: Docker@2
+      displayName: Build docker image
       inputs:
-        repository: 'dotnetwebapp'
+        repository: 'nkatsacr-conn'
         command: 'build'
         Dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         tags: |
